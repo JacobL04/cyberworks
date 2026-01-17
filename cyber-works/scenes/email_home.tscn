@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=3 uid="uid://cjpdnmirjnk46"]
+[gd_scene load_steps=9 format=3 uid="uid://duqgl2oi7i7fe"]
 
 [ext_resource type="Script" uid="uid://2xg1a71cq0we" path="res://scripts/email_home.gd" id="1_75i7d"]
 [ext_resource type="Texture2D" uid="uid://j87rciq1og2w" path="res://assets/emailHome.png" id="2_rpym3"]
