@@ -18,9 +18,11 @@ func _process(_delta: float) -> void:
 
 func _on_button_button_up() -> void:
 	Main.moral += 2
+	print("button 1 pressed")
 
 func _on_button_2_button_up() -> void:
-	pass
+	print("button 2 pressed")
 
 func _on_button_3_button_up() -> void:
 	Main.moral -= 2
+	print("button 3 pressed")
