@@ -1,6 +1,6 @@
 extends Node2D
 
-@export var correctUsername: String = "or 1==1"
+@export var correctUsername: String = "or 1==1--"
 @onready var username: LineEdit = $username
 
 var animation_tween: Tween

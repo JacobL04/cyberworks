@@ -1,6 +1,7 @@
 extends Node2D
 
 @export var correctAns: String = "www.opsecworks.com"
+@export var correctAns2: String = "opsecworks.com"
 @onready var text_edit: LineEdit = $TextEdit
 
 var animation_tween: Tween
@@ -9,7 +10,7 @@ func _on_text_edit_text_submitted(new_text: String) -> void:
 	checkAns(new_text)
 
 func checkAns(input_text: String):
-	if input_text == correctAns:
+	if input_text == correctAns or correctAns2:
 		unlockSuccess()
 	else:
 		unlockFail()
