@@ -9,7 +9,8 @@ func _ready() -> void:
 
 func start_cutscene() -> void:
 	var dialogue: Array[String] = [
-		"You check your computer for more information.",
+		"You realized your identity has been stolen!",
+		"Your goal is to retrieve the missing pieces",
 	]
 
 	textbox.start_dialogue(dialogue)
@@ -18,4 +19,4 @@ func start_cutscene() -> void:
 
 func _on_dialogue_finished() -> void:
 	print("Dialogue finished!")
-	get_tree().change_scene_to_file("res://scenes/intro_cutscenes/scene3.tscn")
+	get_tree().quit()
