@@ -7,30 +7,32 @@
 script = ExtResource("1_u80x2")
 
 [node name="Label" type="Label" parent="."]
-offset_left = 296.0
-offset_right = 856.0
-offset_bottom = 301.0
+offset_left = 260.0
+offset_top = 100.0
+offset_right = 820.0
+offset_bottom = 380.0
+pivot_offset = Vector2(280, 140)
 theme_override_fonts/font = ExtResource("2_bodal")
 theme_override_font_sizes/font_size = 280
 text = "TITLE"
 
 [node name="StartBut" type="TextureButton" parent="."]
-offset_left = 448.0
-offset_top = 272.0
-offset_right = 704.0
-offset_bottom = 392.0
+offset_left = 412.0
+offset_top = 422.0
+offset_right = 668.0
+offset_bottom = 542.0
 
 [node name="SettingsBut" type="TextureButton" parent="."]
-offset_left = 448.0
-offset_top = 408.0
-offset_right = 704.0
-offset_bottom = 528.0
+offset_left = 412.0
+offset_top = 622.0
+offset_right = 668.0
+offset_bottom = 742.0
 
 [node name="QuitBut" type="TextureButton" parent="."]
-offset_left = 480.0
-offset_top = 544.0
-offset_right = 672.0
-offset_bottom = 632.0
+offset_left = 444.0
+offset_top = 822.0
+offset_right = 636.0
+offset_bottom = 910.0
 
 [connection signal="button_up" from="StartBut" to="." method="_on_start_but_button_up"]
 [connection signal="pressed" from="StartBut" to="." method="_on_start_but_pressed"]
