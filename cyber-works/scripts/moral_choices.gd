@@ -20,7 +20,7 @@ func _on_button_button_up() -> void:
 	Main.moral += 2
 
 func _on_button_2_button_up() -> void:
-	Main.moral += 1
+	pass
 
 func _on_button_3_button_up() -> void:
 	Main.moral -= 2
