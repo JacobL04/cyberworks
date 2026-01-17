@@ -23,7 +23,7 @@ func checkAns(input_text: String):
 		unlockFail()
 		
 func unlockSuccess():
-	print("access granted")
+	Main.toMoralChoice3()
 	
 func unlockFail():
 	username.clear()
