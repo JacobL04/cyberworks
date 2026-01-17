@@ -9,13 +9,6 @@ extends Node2D
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
-	progress_bar.hide()
-	button.hide()
-	button_2.hide()
-	button_3.hide()
-	button_4.hide()
-	label.hide()
-	
 	progress_bar.value = 100
 
 
