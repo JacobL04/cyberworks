@@ -1,10 +1,10 @@
-[gd_scene load_steps=3 format=3 uid="uid://ktlq3na1dr26"]
+[gd_scene load_steps=3 format=3 uid="uid://cojflt1iyajkp"]
 
 [ext_resource type="PackedScene" uid="uid://cycb23gs1sdtm" path="res://scenes/text_box.tscn" id="1_imnh7"]
-[ext_resource type="Script" uid="uid://dp1n7nkskx4g2" path="res://scripts/scene_scripts/scene4.gd" id="1_nleyy"]
+[ext_resource type="Script" path="res://scripts/scene_scripts/scene4.gd" id="1_nfw4y"]
 
 [node name="Scene4" type="Node2D"]
-script = ExtResource("1_nleyy")
+script = ExtResource("1_nfw4y")
 
 [node name="RichTextLabel" type="RichTextLabel" parent="."]
 offset_left = 422.0

@@ -114,7 +114,7 @@ func _process(_delta: float) -> void:
 				display_text()
 
 		State.READING:
-			if Input.is_action_just_pressed("ui_accept"):
+			if Input.is_action_just_pressed("ui_accept") or Input.is_action_just_pressed("m1"):
 				label.visible_ratio = 1.0
 				if tween:
 					tween.kill()
@@ -122,7 +122,7 @@ func _process(_delta: float) -> void:
 				change_state(State.FINISHED)
 
 		State.FINISHED:
-			if Input.is_action_just_pressed("ui_accept"):
+			if Input.is_action_just_pressed("ui_accept") or Input.is_action_just_pressed("m1"):
 				change_state(State.READY)
 
 
