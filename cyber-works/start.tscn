@@ -1,0 +1,37 @@
+[gd_scene load_steps=2 format=3 uid="uid://binsjuq5kre2x"]
+
+[ext_resource type="FontFile" uid="uid://cl8ntpdrpicmf" path="res://assets/Born2bSportyV2.ttf" id="1_ots34"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Label" type="Label" parent="."]
+offset_left = 296.0
+offset_right = 856.0
+offset_bottom = 301.0
+theme_override_fonts/font = ExtResource("1_ots34")
+theme_override_font_sizes/font_size = 280
+text = "TITLE"
+
+[node name="StartBut" type="Button" parent="."]
+offset_left = 448.0
+offset_top = 272.0
+offset_right = 704.0
+offset_bottom = 392.0
+theme_override_font_sizes/font_size = 50
+text = "START"
+
+[node name="SettingsBut" type="Button" parent="."]
+offset_left = 448.0
+offset_top = 408.0
+offset_right = 704.0
+offset_bottom = 528.0
+theme_override_font_sizes/font_size = 50
+text = "SETTINGS"
+
+[node name="SettingsBut2" type="Button" parent="."]
+offset_left = 480.0
+offset_top = 544.0
+offset_right = 672.0
+offset_bottom = 632.0
+theme_override_font_sizes/font_size = 50
+text = "QUIT"
