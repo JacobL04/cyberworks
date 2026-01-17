@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://d3k6qpyuayhq5"
-path="res://.godot/imported/Riley.png-1977c6467907be0e2d7738981e6877e1.ctex"
+uid="uid://dgkqlqi3nv21x"
+path="res://.godot/imported/wood_floor.png-37d408fc1e27a0da640a55ba62dc5fc9.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Riley.png"
-dest_files=["res://.godot/imported/Riley.png-1977c6467907be0e2d7738981e6877e1.ctex"]
+source_file="res://assets/wood_floor.png"
+dest_files=["res://.godot/imported/wood_floor.png-37d408fc1e27a0da640a55ba62dc5fc9.ctex"]
 
 [params]
 

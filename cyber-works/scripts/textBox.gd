@@ -83,7 +83,7 @@ extends CanvasLayer
 
 signal dialogue_finished
 
-const READ_RATE := 0.1
+const READ_RATE := 0.05
 
 @onready var textbox_container: MarginContainer = $TextboxContainer
 @onready var arrow: Label = $TextboxContainer/Panel/Arrow

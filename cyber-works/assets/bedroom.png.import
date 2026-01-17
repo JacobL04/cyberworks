@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://d3k6qpyuayhq5"
-path="res://.godot/imported/Riley.png-1977c6467907be0e2d7738981e6877e1.ctex"
+uid="uid://bcj86uicugoar"
+path="res://.godot/imported/bedroom.png-87bba5ed4143e66ebece93f18961d989.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Riley.png"
-dest_files=["res://.godot/imported/Riley.png-1977c6467907be0e2d7738981e6877e1.ctex"]
+source_file="res://assets/bedroom.png"
+dest_files=["res://.godot/imported/bedroom.png-87bba5ed4143e66ebece93f18961d989.ctex"]
 
 [params]
 

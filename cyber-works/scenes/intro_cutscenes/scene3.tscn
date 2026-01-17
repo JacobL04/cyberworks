@@ -1,16 +1,27 @@
-[gd_scene load_steps=3 format=3 uid="uid://ktlq3na1dr26"]
+[gd_scene load_steps=5 format=3 uid="uid://cnq6mxg3g7xrb"]
 
 [ext_resource type="PackedScene" uid="uid://cycb23gs1sdtm" path="res://scenes/text_box.tscn" id="1_imnh7"]
-[ext_resource type="Script" uid="uid://dp1n7nkskx4g2" path="res://scripts/scene_scripts/scene3.gd" id="1_nleyy"]
+[ext_resource type="Script" uid="uid://b1c7qy1imv3xr" path="res://scripts/scene_scripts/scene3.gd" id="1_nleyy"]
+[ext_resource type="Texture2D" uid="uid://dfvt1eacdv1yv" path="res://assets/computer.png" id="3_y8n65"]
+[ext_resource type="Texture2D" uid="uid://d11ux8wjgsv67" path="res://assets/warningBut.png" id="4_g18e3"]
 
 [node name="Scene3" type="Node2D"]
 script = ExtResource("1_nleyy")
 
 [node name="RichTextLabel" type="RichTextLabel" parent="."]
-offset_left = 422.0
-offset_top = 182.0
-offset_right = 711.0
-offset_bottom = 285.0
-text = "Scene 3"
+offset_right = 221.0
+offset_bottom = 67.0
+bbcode_enabled = true
+text = "Scene 2"
 
 [node name="TextBox" parent="." instance=ExtResource("1_imnh7")]
+
+[node name="Computer" type="Sprite2D" parent="."]
+position = Vector2(539.875, 540.125)
+scale = Vector2(16.871094, 16.871094)
+texture = ExtResource("3_y8n65")
+
+[node name="WarningBut" type="Sprite2D" parent="."]
+position = Vector2(589, 436)
+scale = Vector2(9.4375, 6.7421875)
+texture = ExtResource("4_g18e3")
