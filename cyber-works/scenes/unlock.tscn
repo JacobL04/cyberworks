@@ -7,7 +7,7 @@
 [ext_resource type="Script" uid="uid://djgehewy5wuna" path="res://scripts/password_1.gd" id="5_o1mj6"]
 [ext_resource type="Script" uid="uid://ylyi48x68rt0" path="res://scripts/land.gd" id="6_uqf5h"]
 [ext_resource type="Script" uid="uid://trkgnwuvtvih" path="res://scripts/password_2.gd" id="6_wyndt"]
-[ext_resource type="Script" uid="uid://c88taquvnsvdd" path="res://scenes/password_3.gd" id="7_m1e48"]
+[ext_resource type="Script" uid="uid://c88taquvnsvdd" path="res://scripts/password_3.gd" id="7_m1e48"]
 
 [node name="Unlock" type="Node2D"]
 script = ExtResource("1_cdkie")
@@ -26,36 +26,36 @@ icon = ExtResource("3_7rt6x")
 flat = true
 
 [node name="password1" type="Label" parent="."]
-offset_left = 320.0
+offset_left = 232.0
 offset_top = 792.0
-offset_right = 384.0
+offset_right = 379.0
 offset_bottom = 840.0
 mouse_filter = 0
 theme_override_fonts/font = ExtResource("4_4n3vj")
 theme_override_font_sizes/font_size = 48
-text = "one"
+text = "aushdad"
 script = ExtResource("5_o1mj6")
 
 [node name="password2" type="Label" parent="."]
-offset_left = 552.0
-offset_top = 800.0
-offset_right = 616.0
-offset_bottom = 848.0
+offset_left = 471.0
+offset_top = 792.0
+offset_right = 669.0
+offset_bottom = 840.0
 mouse_filter = 0
 theme_override_fonts/font = ExtResource("4_4n3vj")
 theme_override_font_sizes/font_size = 48
-text = "two"
+text = "P1@s5w0rD"
 script = ExtResource("6_wyndt")
 
 [node name="password3" type="Label" parent="."]
 offset_left = 776.0
-offset_top = 784.0
+offset_top = 792.0
 offset_right = 875.0
-offset_bottom = 832.0
+offset_bottom = 840.0
 mouse_filter = 0
 theme_override_fonts/font = ExtResource("4_4n3vj")
 theme_override_font_sizes/font_size = 48
-text = "three"
+text = "1234"
 script = ExtResource("7_m1e48")
 
 [node name="land" type="Label" parent="."]

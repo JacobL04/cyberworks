@@ -15,7 +15,7 @@ func checkAns(input_text: String):
 		unlockFail()
 		
 func unlockSuccess():
-	print("access granted")
+	Main.toMoralChoice2()
 	
 func unlockFail():
 	text_edit.clear()

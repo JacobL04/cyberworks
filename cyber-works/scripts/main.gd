@@ -8,7 +8,7 @@ var techChallenge = false
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
-	get_tree().change_scene_to_file.call_deferred("res://scenes/start.tscn") #comment this out to test specific scenes
+	get_tree().change_scene_to_file.call_deferred("res://scenes/unlock.tscn") #comment this out to test specific scenes
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(_delta: float) -> void:
@@ -18,8 +18,23 @@ func _process(_delta: float) -> void:
 func toMoralChoice():
 	get_tree().change_scene_to_file.call_deferred("res://scenes/moral_choices.tscn")
 
+func toMoralChoice2():
+	get_tree().change_scene_to_file.call_deferred("res://scenes/moral_choices2.tscn")
+
+func toMoralChoice3():
+	get_tree().change_scene_to_file.call_deferred("res://scenes/moral_choices3.tscn")
+
+func toMoralChoice4():
+	get_tree().change_scene_to_file.call_deferred("res://scenes/moral_choices4.tscn")
+
 func toEmail():
 	get_tree().change_scene_to_file.call_deferred("res://scenes/email.tscn")
 
 func toEmailHome():
 	get_tree().change_scene_to_file.call_deferred("res://scenes/email_home.tscn")
+
+func toWebsite():
+	get_tree().change_scene_to_file.call_deferred("res://scenes/website.tscn")
+
+func toMainInterface():
+	get_tree().change_scene_to_file.call_deferred("res://scenes/main_interface.tscn")

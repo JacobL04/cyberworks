@@ -1,6 +1,6 @@
 [gd_scene load_steps=10 format=3 uid="uid://dfl5lyg0pydk8"]
 
-[ext_resource type="Script" uid="uid://j66ei3msbdxq" path="res://scripts/moral_choices.gd" id="1_7ky8m"]
+[ext_resource type="Script" uid="uid://0f8ti0x8yuif" path="res://scripts/moral_choices_4.gd" id="1_7ky8m"]
 [ext_resource type="Texture2D" uid="uid://bcbp2vtyrh6lc" path="res://assets/moralInterface.png" id="2_ke2gx"]
 [ext_resource type="Texture2D" uid="uid://bxqre4aaa78uk" path="res://assets/greenBut.png" id="3_8m23i"]
 [ext_resource type="Texture2D" uid="uid://1wymf2e1aoxd" path="res://assets/greenButClicked.png" id="4_k0jge"]

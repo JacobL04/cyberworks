@@ -1,6 +1,6 @@
 extends Label
 
-func _get_drag_data(at_position):
+func _get_drag_data(_at_position):
 	# 1. Prepare the data to transfer (just the text string this time)
 	var drag_data = {
 		"text": text,
