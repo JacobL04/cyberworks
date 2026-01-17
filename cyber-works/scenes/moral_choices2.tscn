@@ -1,6 +1,6 @@
-[gd_scene load_steps=10 format=3 uid="uid://bfr6wqraam4l0"]
+[gd_scene load_steps=10 format=3 uid="uid://cbtecjr03rdsk"]
 
-[ext_resource type="Script" uid="uid://deh46vaeykitb" path="res://scripts/moral_choices_2.gd" id="1_5of2f"]
+[ext_resource type="Script" path="res://scripts/moral_choices_2.gd" id="1_5of2f"]
 [ext_resource type="Texture2D" uid="uid://bcbp2vtyrh6lc" path="res://assets/moralInterface.png" id="2_o0uip"]
 [ext_resource type="Texture2D" uid="uid://bxqre4aaa78uk" path="res://assets/greenBut.png" id="3_ti7pc"]
 [ext_resource type="Texture2D" uid="uid://1wymf2e1aoxd" path="res://assets/greenButClicked.png" id="4_nnu65"]
@@ -101,7 +101,7 @@ theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_fonts/font = ExtResource("5_rv0hr")
 theme_override_font_sizes/font_size = 40
 text = "You found a very suspicious e-mail 
-which might be a fishing attempt. 
+which might be a phishing attempt. 
 What will you do?"
 horizontal_alignment = 1
 
