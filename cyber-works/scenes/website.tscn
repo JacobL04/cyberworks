@@ -1,16 +1,18 @@
-[gd_scene load_steps=3 format=3 uid="uid://2a5l0y6agrcq"]
+[gd_scene load_steps=4 format=3 uid="uid://2a5l0y6agrcq"]
 
 [ext_resource type="Texture2D" uid="uid://cjmknls6mh4q1" path="res://assets/websiteLogin.png" id="1_5er5m"]
+[ext_resource type="Script" uid="uid://cews5pfauwpns" path="res://scripts/website.gd" id="1_y1t5g"]
 [ext_resource type="FontFile" uid="uid://cl8ntpdrpicmf" path="res://assets/Born2bSportyV2.ttf" id="2_xqv5d"]
 
 [node name="website" type="Node2D"]
+script = ExtResource("1_y1t5g")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 position = Vector2(540, 540)
 scale = Vector2(16.875, 16.875)
 texture = ExtResource("1_5er5m")
 
-[node name="LineEdit" type="LineEdit" parent="."]
+[node name="username" type="LineEdit" parent="."]
 offset_left = 424.0
 offset_top = 575.0
 offset_right = 752.0
@@ -19,7 +21,7 @@ theme_override_fonts/font = ExtResource("2_xqv5d")
 theme_override_font_sizes/font_size = 32
 placeholder_text = "Username"
 
-[node name="LineEdit2" type="LineEdit" parent="."]
+[node name="password" type="LineEdit" parent="."]
 offset_left = 424.0
 offset_top = 710.0
 offset_right = 752.0
@@ -27,3 +29,10 @@ offset_bottom = 758.0
 theme_override_fonts/font = ExtResource("2_xqv5d")
 theme_override_font_sizes/font_size = 32
 placeholder_text = "Password"
+
+[node name="Button" type="Button" parent="."]
+offset_left = 704.0
+offset_top = 816.0
+offset_right = 816.0
+offset_bottom = 855.0
+text = "ENTER"

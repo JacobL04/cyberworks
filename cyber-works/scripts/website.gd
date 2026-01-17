@@ -1,15 +1,23 @@
 extends Node2D
 
-@export var correctAns: String = "www.opsecworks.com"
-@onready var text_edit: LineEdit = $TextEdit
+@export var correctUsername: String = "or 1==1"
+@onready var username: LineEdit = $username
 
 var animation_tween: Tween
 
+func _ready() -> void:
+	username.text_submitted.connect(_on_text_edit_text_submitted)
+	$Button.pressed.connect(_on_button_pressed)
+
 func _on_text_edit_text_submitted(new_text: String) -> void:
 	checkAns(new_text)
-
+	
+func _on_button_pressed():
+	# If using a button, we need to grab the text manually
+	checkAns(username.text)
+	
 func checkAns(input_text: String):
-	if input_text == correctAns:
+	if input_text == correctUsername:
 		unlockSuccess()
 	else:
 		unlockFail()
@@ -18,7 +26,7 @@ func unlockSuccess():
 	print("access granted")
 	
 func unlockFail():
-	text_edit.clear()
+	username.clear()
 	flash_error()
 
 func flash_error():
@@ -31,8 +39,8 @@ func flash_error():
 	
 	# 3. INSTANTLY turn the box Red (over 0.0 seconds)
 	# We use "modulate" to tint the node
-	animation_tween.tween_property(text_edit, "modulate", Color(1, 0, 0), 0.0)
+	animation_tween.tween_property(username, "modulate", Color(1, 0, 0), 0.0)
 	
 	# 4. SLOWLY fade back to White (normal) over 0.5 seconds
 	# We use Color.WHITE (which is default/no tint)
-	animation_tween.tween_property(text_edit, "modulate", Color.WHITE, 0.5).set_trans(Tween.TRANS_SINE).set_ease(Tween.EASE_OUT)
+	animation_tween.tween_property(username, "modulate", Color.WHITE, 0.5).set_trans(Tween.TRANS_SINE).set_ease(Tween.EASE_OUT)
