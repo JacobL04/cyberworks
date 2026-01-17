@@ -1,22 +1,22 @@
-[gd_scene load_steps=10 format=3 uid="uid://dra6mivmam3tq"]
+[gd_scene load_steps=10 format=3 uid="uid://bfr6wqraam4l0"]
 
-[ext_resource type="Script" uid="uid://j66ei3msbdxq" path="res://scripts/moral_choices.gd" id="1_21gav"]
-[ext_resource type="Texture2D" uid="uid://bcbp2vtyrh6lc" path="res://assets/moralInterface.png" id="2_61c6a"]
-[ext_resource type="FontFile" uid="uid://cl8ntpdrpicmf" path="res://assets/Born2bSportyV2.ttf" id="2_g2rvn"]
-[ext_resource type="Texture2D" uid="uid://bxqre4aaa78uk" path="res://assets/greenBut.png" id="3_uljmf"]
-[ext_resource type="Texture2D" uid="uid://1wymf2e1aoxd" path="res://assets/greenButClicked.png" id="4_dl41x"]
-[ext_resource type="Texture2D" uid="uid://p6s3buduojmm" path="res://assets/blueBut.png" id="5_tae1i"]
-[ext_resource type="Texture2D" uid="uid://cgvvvqykdhjll" path="res://assets/blueButClicked.png" id="6_3xl8h"]
-[ext_resource type="Texture2D" uid="uid://brmgkhx3b25k0" path="res://assets/purpleBut.png" id="7_djdny"]
-[ext_resource type="Texture2D" uid="uid://cnpen5gfjbnse" path="res://assets/purpleButClicked.png" id="8_sucbw"]
+[ext_resource type="Script" uid="uid://j66ei3msbdxq" path="res://scripts/moral_choices.gd" id="1_5of2f"]
+[ext_resource type="Texture2D" uid="uid://bcbp2vtyrh6lc" path="res://assets/moralInterface.png" id="2_o0uip"]
+[ext_resource type="Texture2D" uid="uid://bxqre4aaa78uk" path="res://assets/greenBut.png" id="3_ti7pc"]
+[ext_resource type="Texture2D" uid="uid://1wymf2e1aoxd" path="res://assets/greenButClicked.png" id="4_nnu65"]
+[ext_resource type="FontFile" uid="uid://cl8ntpdrpicmf" path="res://assets/Born2bSportyV2.ttf" id="5_rv0hr"]
+[ext_resource type="Texture2D" uid="uid://p6s3buduojmm" path="res://assets/blueBut.png" id="6_ixquw"]
+[ext_resource type="Texture2D" uid="uid://cgvvvqykdhjll" path="res://assets/blueButClicked.png" id="7_j8nve"]
+[ext_resource type="Texture2D" uid="uid://brmgkhx3b25k0" path="res://assets/purpleBut.png" id="8_qxkik"]
+[ext_resource type="Texture2D" uid="uid://cnpen5gfjbnse" path="res://assets/purpleButClicked.png" id="9_f8x3v"]
 
 [node name="moralChoices" type="Node2D"]
-script = ExtResource("1_21gav")
+script = ExtResource("1_5of2f")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 position = Vector2(541, 438.5)
 scale = Vector2(16.90625, 16.953125)
-texture = ExtResource("2_61c6a")
+texture = ExtResource("2_o0uip")
 
 [node name="ProgressBar" type="TextureProgressBar" parent="."]
 offset_left = 144.0
@@ -30,21 +30,22 @@ offset_left = 64.0
 offset_top = 800.0
 offset_right = 376.0
 offset_bottom = 1008.0
-texture_normal = ExtResource("3_uljmf")
-texture_pressed = ExtResource("4_dl41x")
+texture_normal = ExtResource("3_ti7pc")
+texture_pressed = ExtResource("4_nnu65")
 ignore_texture_size = true
 stretch_mode = 6
 
 [node name="Label" type="Label" parent="Button"]
 layout_mode = 0
 offset_left = 58.0
-offset_top = 74.0
+offset_top = 64.0
 offset_right = 250.0
-offset_bottom = 132.0
-theme_override_fonts/font = ExtResource("2_g2rvn")
+offset_bottom = 139.0
+theme_override_fonts/font = ExtResource("5_rv0hr")
 theme_override_font_sizes/font_size = 22
-text = "Force all employees
-to change passwords"
+text = "Quarantine the email 
+globally and shut 
+off the main server"
 horizontal_alignment = 1
 
 [node name="Button2" type="TextureButton" parent="."]
@@ -52,21 +53,22 @@ offset_left = 392.0
 offset_top = 800.0
 offset_right = 704.0
 offset_bottom = 1008.0
-texture_normal = ExtResource("5_tae1i")
-texture_pressed = ExtResource("6_3xl8h")
+texture_normal = ExtResource("6_ixquw")
+texture_pressed = ExtResource("7_j8nve")
 ignore_texture_size = true
 stretch_mode = 6
 
 [node name="Label2" type="Label" parent="Button2"]
 layout_mode = 0
-offset_left = 64.0
-offset_top = 72.0
-offset_right = 256.0
-offset_bottom = 130.0
-theme_override_fonts/font = ExtResource("2_g2rvn")
+offset_left = 55.0
+offset_top = 59.0
+offset_right = 262.0
+offset_bottom = 134.0
+theme_override_fonts/font = ExtResource("5_rv0hr")
 theme_override_font_sizes/font_size = 22
-text = "Fix only high-value 
-accounts"
+text = "Remove it from 
+affected inboxes and 
+block the URL only"
 horizontal_alignment = 1
 
 [node name="Button3" type="TextureButton" parent="."]
@@ -74,8 +76,8 @@ offset_left = 712.0
 offset_top = 800.0
 offset_right = 1024.0
 offset_bottom = 1008.0
-texture_normal = ExtResource("7_djdny")
-texture_pressed = ExtResource("8_sucbw")
+texture_normal = ExtResource("8_qxkik")
+texture_pressed = ExtResource("9_f8x3v")
 ignore_texture_size = true
 stretch_mode = 6
 
@@ -85,9 +87,9 @@ offset_left = 66.0
 offset_top = 72.0
 offset_right = 258.0
 offset_bottom = 130.0
-theme_override_fonts/font = ExtResource("2_g2rvn")
+theme_override_fonts/font = ExtResource("5_rv0hr")
 theme_override_font_sizes/font_size = 22
-text = "Ignore the alert"
+text = "Ignore"
 horizontal_alignment = 1
 
 [node name="Questions" type="Label" parent="."]
@@ -96,11 +98,10 @@ offset_top = 442.5
 offset_right = 999.0
 offset_bottom = 611.5
 theme_override_colors/font_color = Color(0, 0, 0, 1)
-theme_override_fonts/font = ExtResource("2_g2rvn")
+theme_override_fonts/font = ExtResource("5_rv0hr")
 theme_override_font_sizes/font_size = 40
-text = "The security firm you are 
-working for has been breached. 
-All passwords were leaked. 
+text = "You found a very suspicious e-mail 
+which might be a fishing attempt. 
 What will you do?"
 horizontal_alignment = 1
 
