@@ -1,7 +1,8 @@
 [gd_scene load_steps=4 format=3 uid="uid://dj80cnt1a4tu"]
 
-[ext_resource type="Script" path="res://scripts/MainInterface.gd" id="1_51bk3"]
+[ext_resource type="Script" uid="uid://che8njejfljs0" path="res://scripts/MainInterface.gd" id="1_51bk3"]
 [ext_resource type="Texture2D" uid="uid://hmknbyh2oxh1" path="res://assets/site.png" id="2_efbr5"]
+[ext_resource type="FontFile" uid="uid://cl8ntpdrpicmf" path="res://assets/Born2bSportyV2.ttf" id="3_efbr5"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_51bk3"]
 font_size = 26
@@ -55,3 +56,13 @@ offset_bottom = 17.679993
 grow_vertical = 2
 text = "https://opsecworks.com/admin/files"
 label_settings = SubResource("LabelSettings_51bk3")
+
+[node name="LineEdit" type="LineEdit" parent="."]
+layout_mode = 0
+offset_left = 224.0
+offset_top = 824.0
+offset_right = 800.0
+offset_bottom = 879.0
+theme_override_fonts/font = ExtResource("3_efbr5")
+theme_override_font_sizes/font_size = 40
+placeholder_text = "Enter SIN number here"
