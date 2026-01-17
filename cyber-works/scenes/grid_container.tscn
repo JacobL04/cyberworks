@@ -1,0 +1,26 @@
+[gd_scene load_steps=3 format=3 uid="uid://c42dacld3oeqm"]
+
+[ext_resource type="Script" uid="uid://che8njejfljs0" path="res://scripts/MainInterface.gd" id="1_61qpq"]
+[ext_resource type="Texture2D" uid="uid://hmknbyh2oxh1" path="res://assets/site.png" id="2_b2u1g"]
+
+[node name="MainInterface" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_61qpq")
+
+[node name="Background" type="TextureRect" parent="."]
+layout_mode = 0
+offset_left = -32.0
+offset_top = -32.0
+offset_right = 32.0
+offset_bottom = 32.0
+texture = ExtResource("2_b2u1g")
+
+[node name="WindowContainer" type="PanelContainer" parent="."]
+layout_mode = 0
+
+[node name="FileList" type="VBoxContainer" parent="WindowContainer"]
+layout_mode = 2
+
+[node name="SaveDialog" type="FileDialog" parent="."]
+access = 2

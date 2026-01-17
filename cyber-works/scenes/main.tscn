@@ -1,4 +1,4 @@
-[gd_scene load_steps=2 format=3 uid="uid://jpxcr7l7xh50"]
+[gd_scene load_steps=2 format=3 uid="uid://bvbk8uyowpwr1"]
 
 [ext_resource type="Script" uid="uid://brl74p5w5kvrt" path="res://scripts/main.gd" id="1_0wfyh"]
 
@@ -6,4 +6,4 @@
 script = ExtResource("1_0wfyh")
 
 [node name="Camera2D" type="Camera2D" parent="."]
-position = Vector2(540, 542)
+position = Vector2(540, 544)

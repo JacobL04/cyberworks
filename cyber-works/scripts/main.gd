@@ -9,7 +9,7 @@ var techChallenge = false
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	get_tree().change_scene_to_file.call_deferred("res://scenes/unlock.tscn") #comment this out to test specific scenes
-	#pass
+	get_tree().change_scene_to_file.call_deferred("res://scenes/main_interface.tscn") #comment this out to test specific scenes
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(_delta: float) -> void:
