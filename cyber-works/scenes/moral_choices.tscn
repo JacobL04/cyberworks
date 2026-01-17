@@ -20,25 +20,25 @@ offset_bottom = 580.0
 text = "Button 1"
 
 [node name="Button2" type="Button" parent="."]
-offset_left = 488.0
+offset_left = 400.0
 offset_top = 504.0
-offset_right = 664.0
+offset_right = 576.0
 offset_bottom = 580.0
 text = "Button 2"
 
 [node name="Button3" type="Button" parent="."]
-offset_left = 912.0
+offset_left = 752.0
 offset_top = 504.0
-offset_right = 1088.0
+offset_right = 928.0
 offset_bottom = 580.0
 text = "Button 4
 "
 
 [node name="Questions" type="Label" parent="."]
-offset_left = 304.0
-offset_top = 104.0
-offset_right = 848.0
-offset_bottom = 224.0
+offset_left = 216.0
+offset_top = 112.0
+offset_right = 760.0
+offset_bottom = 232.0
 text = "filler
 "
 horizontal_alignment = 1

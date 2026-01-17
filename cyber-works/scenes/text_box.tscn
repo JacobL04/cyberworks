@@ -33,9 +33,9 @@ theme_override_styles/panel = SubResource("StyleBoxFlat_d0rgj")
 
 [node name="Arrow" type="Label" parent="TextboxContainer/Panel"]
 layout_mode = 0
-offset_left = 776.0
+offset_left = 775.0
 offset_top = 112.0
-offset_right = 819.0
+offset_right = 818.0
 offset_bottom = 188.0
 theme_override_fonts/font = ExtResource("2_qdwih")
 theme_override_font_sizes/font_size = 76
