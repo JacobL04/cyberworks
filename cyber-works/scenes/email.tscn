@@ -1,0 +1,27 @@
+[gd_scene load_steps=3 format=3 uid="uid://i1nhool602ji"]
+
+[ext_resource type="Script" uid="uid://bw2hof28fw53i" path="res://scripts/email.gd" id="1_85euw"]
+[ext_resource type="FontFile" uid="uid://cl8ntpdrpicmf" path="res://assets/Born2bSportyV2.ttf" id="1_dwfkx"]
+
+[node name="email" type="Node2D"]
+script = ExtResource("1_85euw")
+
+[node name="emailBox" type="Label" parent="."]
+offset_left = 72.0
+offset_top = 328.0
+offset_right = 1024.0
+offset_bottom = 1024.0
+theme_override_fonts/font = ExtResource("1_dwfkx")
+theme_override_font_sizes/font_size = 30
+text = "blah blah blah"
+
+[node name="TextEdit" type="LineEdit" parent="."]
+offset_left = 336.0
+offset_top = 128.0
+offset_right = 1024.0
+offset_bottom = 192.0
+theme_override_fonts/font = ExtResource("1_dwfkx")
+theme_override_font_sizes/font_size = 48
+placeholder_text = "Enter URL here"
+
+[connection signal="text_submitted" from="TextEdit" to="." method="_on_text_edit_text_submitted"]
