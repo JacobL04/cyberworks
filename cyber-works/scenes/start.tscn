@@ -33,5 +33,7 @@ offset_right = 672.0
 offset_bottom = 632.0
 
 [connection signal="button_up" from="StartBut" to="." method="_on_start_but_button_up"]
+[connection signal="pressed" from="StartBut" to="." method="_on_start_but_pressed"]
 [connection signal="button_up" from="SettingsBut" to="." method="_on_settings_but_button_up"]
 [connection signal="button_up" from="QuitBut" to="." method="_on_quit_but_button_up"]
+[connection signal="pressed" from="QuitBut" to="." method="_on_quit_but_pressed"]

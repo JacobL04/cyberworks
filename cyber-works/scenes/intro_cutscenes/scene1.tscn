@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://dgnffbix6olpj"]
+
+[ext_resource type="Script" uid="uid://brxucii3wg64u" path="res://scripts/scene_scripts/scene1.gd" id="1_5ktdg"]
+[ext_resource type="PackedScene" uid="uid://cycb23gs1sdtm" path="res://scenes/text_box.tscn" id="1_wviym"]
+
+[node name="Scene1" type="Node2D"]
+script = ExtResource("1_5ktdg")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="."]
+offset_left = 507.0
+offset_top = 505.0
+offset_right = 625.0
+offset_bottom = 545.0
+text = "Scene 1"
+
+[node name="TextBox" parent="." instance=ExtResource("1_wviym")]
