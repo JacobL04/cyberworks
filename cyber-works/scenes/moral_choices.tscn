@@ -1,8 +1,14 @@
-[gd_scene load_steps=4 format=3 uid="uid://dra6mivmam3tq"]
+[gd_scene load_steps=10 format=3 uid="uid://dra6mivmam3tq"]
 
 [ext_resource type="Script" uid="uid://j66ei3msbdxq" path="res://scripts/moral_choices.gd" id="1_21gav"]
 [ext_resource type="Texture2D" uid="uid://bcbp2vtyrh6lc" path="res://assets/moralInterface.png" id="2_61c6a"]
 [ext_resource type="FontFile" uid="uid://cl8ntpdrpicmf" path="res://assets/Born2bSportyV2.ttf" id="2_g2rvn"]
+[ext_resource type="Texture2D" uid="uid://bxqre4aaa78uk" path="res://assets/greenBut.png" id="3_uljmf"]
+[ext_resource type="Texture2D" uid="uid://1wymf2e1aoxd" path="res://assets/greenButClicked.png" id="4_dl41x"]
+[ext_resource type="Texture2D" uid="uid://p6s3buduojmm" path="res://assets/blueBut.png" id="5_tae1i"]
+[ext_resource type="Texture2D" uid="uid://cgvvvqykdhjll" path="res://assets/blueButClicked.png" id="6_3xl8h"]
+[ext_resource type="Texture2D" uid="uid://brmgkhx3b25k0" path="res://assets/purpleBut.png" id="7_djdny"]
+[ext_resource type="Texture2D" uid="uid://cnpen5gfjbnse" path="res://assets/purpleButClicked.png" id="8_sucbw"]
 
 [node name="moralChoices" type="Node2D"]
 script = ExtResource("1_21gav")
@@ -22,20 +28,32 @@ rounded = true
 [node name="Button" type="TextureButton" parent="."]
 offset_left = 64.0
 offset_top = 800.0
-offset_right = 240.0
-offset_bottom = 876.0003
+offset_right = 376.0
+offset_bottom = 1008.0
+texture_normal = ExtResource("3_uljmf")
+texture_pressed = ExtResource("4_dl41x")
+ignore_texture_size = true
+stretch_mode = 6
 
 [node name="Button2" type="TextureButton" parent="."]
-offset_left = 400.0
+offset_left = 392.0
 offset_top = 800.0
-offset_right = 576.0
-offset_bottom = 876.0003
+offset_right = 704.0
+offset_bottom = 1008.0
+texture_normal = ExtResource("5_tae1i")
+texture_pressed = ExtResource("6_3xl8h")
+ignore_texture_size = true
+stretch_mode = 6
 
 [node name="Button3" type="TextureButton" parent="."]
-offset_left = 752.0
+offset_left = 712.0
 offset_top = 800.0
-offset_right = 928.0
-offset_bottom = 876.0003
+offset_right = 1024.0
+offset_bottom = 1008.0
+texture_normal = ExtResource("7_djdny")
+texture_pressed = ExtResource("8_sucbw")
+ignore_texture_size = true
+stretch_mode = 6
 
 [node name="Questions" type="Label" parent="."]
 offset_left = 94.0
