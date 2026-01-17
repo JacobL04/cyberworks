@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://d3k6qpyuayhq5"
-path="res://.godot/imported/Riley.png-1977c6467907be0e2d7738981e6877e1.ctex"
+uid="uid://7s1535qh0l4d"
+path="res://.godot/imported/Riley_Blank.png-3ec6a14054c7178e755ed5360a06b939.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Riley.png"
-dest_files=["res://.godot/imported/Riley.png-1977c6467907be0e2d7738981e6877e1.ctex"]
+source_file="res://assets/Riley_Blank.png"
+dest_files=["res://.godot/imported/Riley_Blank.png-3ec6a14054c7178e755ed5360a06b939.ctex"]
 
 [params]
 

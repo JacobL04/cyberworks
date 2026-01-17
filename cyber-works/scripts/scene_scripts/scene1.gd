@@ -2,7 +2,6 @@ extends Node
 
 @onready var textbox := $TextBox
 
-
 func _ready() -> void:
 	start_cutscene()
 
@@ -11,7 +10,10 @@ func start_cutscene() -> void:
 	var dialogue: Array[String] = [
 		"You wake up on a Monday morning.",
 		"Another day at the office.",
-	    "You get dressed and head to the building..."
+		"A notification blinks on your phone.",
+		"Unauthorized access detected..",
+		"Your credentials have been compromised.",
+		"Your identity is no longer yours.",
 	]
 
 	textbox.start_dialogue(dialogue)
