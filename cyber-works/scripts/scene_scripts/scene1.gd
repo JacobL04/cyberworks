@@ -1,6 +1,7 @@
 extends Node
 
 @onready var textbox := $TextBox
+@onready var fade: CanvasLayer = $Fade
 
 
 func _ready() -> void:
@@ -20,4 +21,5 @@ func start_cutscene() -> void:
 
 func _on_dialogue_finished() -> void:
 	print("Dialogue finished!")
+	#await fade.fade(1.0, 1.5).finished
 	get_tree().change_scene_to_file("res://scenes/intro_cutscenes/scene2.tscn")

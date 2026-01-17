@@ -1,7 +1,8 @@
-[gd_scene load_steps=3 format=3 uid="uid://dbbijuu7qmove"]
+[gd_scene load_steps=4 format=3 uid="uid://dbbijuu7qmove"]
 
 [ext_resource type="Script" uid="uid://c5bjufb5e37cn" path="res://scripts/scene_scripts/scene2.gd" id="1_wkpdy"]
 [ext_resource type="PackedScene" uid="uid://cycb23gs1sdtm" path="res://scenes/text_box.tscn" id="2_43jhh"]
+[ext_resource type="PackedScene" uid="uid://da5d0rm1h72yr" path="res://scenes/intro_cutscenes/fade.tscn" id="3_mlvil"]
 
 [node name="Scene2" type="Node2D"]
 script = ExtResource("1_wkpdy")
@@ -12,3 +13,5 @@ offset_bottom = 67.0
 text = "Scene 2"
 
 [node name="TextBox" parent="." instance=ExtResource("2_43jhh")]
+
+[node name="Fade" parent="." instance=ExtResource("3_mlvil")]

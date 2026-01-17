@@ -1,6 +1,7 @@
 extends Node
 
 @onready var textbox := $TextBox
+@onready var fade: CanvasLayer = $Fade
 
 
 func _ready() -> void:
@@ -8,6 +9,8 @@ func _ready() -> void:
 
 
 func start_cutscene() -> void:
+	#await fade.fade(0.0, 1.5).finished
+
 	var dialogue: Array[String] = [
 		"5 mins later..",
 		"You pull out your key card.",

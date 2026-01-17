@@ -1,7 +1,13 @@
-[gd_scene load_steps=3 format=3 uid="uid://binsjuq5kre2x"]
+[gd_scene load_steps=9 format=3 uid="uid://binsjuq5kre2x"]
 
 [ext_resource type="Script" uid="uid://dikpn2mcn4t31" path="res://scripts/start.gd" id="1_u80x2"]
 [ext_resource type="FontFile" uid="uid://cl8ntpdrpicmf" path="res://assets/Born2bSportyV2.ttf" id="2_bodal"]
+[ext_resource type="Texture2D" uid="uid://b7ao13g6xpiu6" path="res://assets/start.png" id="3_kdmts"]
+[ext_resource type="Texture2D" uid="uid://xrxetf6sdlti" path="res://assets/start_pressed.png" id="4_0auqf"]
+[ext_resource type="Texture2D" uid="uid://up5h4u65wvs3" path="res://assets/start_hover.png" id="5_0auqf"]
+[ext_resource type="Texture2D" uid="uid://bg3m3pudqdq0w" path="res://assets/exit.png" id="6_8itgj"]
+[ext_resource type="Texture2D" uid="uid://dhqjul331k1d7" path="res://assets/exit_pressed.png" id="7_tn317"]
+[ext_resource type="Texture2D" uid="uid://cw47hh248qlvc" path="res://assets/exit_hover.png" id="8_m8nf6"]
 
 [node name="start" type="Node2D"]
 script = ExtResource("1_u80x2")
@@ -21,6 +27,10 @@ offset_left = 412.0
 offset_top = 422.0
 offset_right = 668.0
 offset_bottom = 542.0
+texture_normal = ExtResource("3_kdmts")
+texture_pressed = ExtResource("4_0auqf")
+texture_hover = ExtResource("5_0auqf")
+stretch_mode = 0
 
 [node name="SettingsBut" type="TextureButton" parent="."]
 offset_left = 412.0
@@ -33,6 +43,10 @@ offset_left = 444.0
 offset_top = 822.0
 offset_right = 636.0
 offset_bottom = 910.0
+texture_normal = ExtResource("6_8itgj")
+texture_pressed = ExtResource("7_tn317")
+texture_hover = ExtResource("8_m8nf6")
+stretch_mode = 0
 
 [connection signal="button_up" from="StartBut" to="." method="_on_start_but_button_up"]
 [connection signal="pressed" from="StartBut" to="." method="_on_start_but_pressed"]
