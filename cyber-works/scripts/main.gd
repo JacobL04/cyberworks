@@ -18,3 +18,9 @@ func _process(_delta: float) -> void:
 #first moral choice
 func toMoralChoice():
 	get_tree().change_scene_to_file.call_deferred("res://scenes/moral_choices.tscn")
+
+func toEmail():
+	get_tree().change_scene_to_file.call_deferred("res://scenes/email.tscn")
+
+func toEmailHome():
+	get_tree().change_scene_to_file.call_deferred("res://scenes/email_home.tscn")
