@@ -20,7 +20,7 @@ var files_to_deploy = [
 var animation_tween: Tween
 var current_target_file_path = ""
 
-@export var correctAns: String = "opsecworks#$+"
+@export var correctAns: String = "491-932-323"
 @onready var text_edit: LineEdit = $LineEdit
 @onready var files_container = $FilesContainer
 @onready var save_dialog = $SaveDialog
