@@ -4,7 +4,6 @@ extends Node2D
 @onready var button: Button = $Button
 @onready var button_2: Button = $Button2
 @onready var button_3: Button = $Button3
-@onready var button_4: Button = $Button4
 @onready var label: Label = $Label
 
 # Called when the node enters the scene tree for the first time.
@@ -24,7 +23,4 @@ func _on_button_2_button_up() -> void:
 	Main.moral += 1
 
 func _on_button_3_button_up() -> void:
-	Main.moral -= 1
-
-func _on_button_4_button_up() -> void:
 	Main.moral -= 2
