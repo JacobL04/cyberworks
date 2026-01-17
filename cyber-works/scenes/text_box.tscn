@@ -43,12 +43,13 @@ text = "v"
 
 [node name="Label" type="Label" parent="TextboxContainer/Panel"]
 layout_mode = 0
-offset_left = 64.0
-offset_top = 40.0
-offset_right = 808.0
-offset_bottom = 152.0
+offset_left = 40.0
+offset_top = 43.0
+offset_right = 784.0
+offset_bottom = 155.0
 theme_override_fonts/font = ExtResource("2_qdwih")
 theme_override_font_sizes/font_size = 46
 text = "Placeholder Text"
+autowrap_mode = 3
 visible_characters = 0
 visible_ratio = 0.0

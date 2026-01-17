@@ -1,6 +1,6 @@
-[gd_scene load_steps=3 format=3 uid="uid://i1nhool602ji"]
+[gd_scene load_steps=3 format=3 uid="uid://dhqg7vyaa8jaf"]
 
-[ext_resource type="Script" uid="uid://bw2hof28fw53i" path="res://scripts/email.gd" id="1_85euw"]
+[ext_resource type="Script" path="res://scripts/email.gd" id="1_85euw"]
 [ext_resource type="FontFile" uid="uid://cl8ntpdrpicmf" path="res://assets/Born2bSportyV2.ttf" id="1_dwfkx"]
 
 [node name="email" type="Node2D"]
