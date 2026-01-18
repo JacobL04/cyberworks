@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=3 uid="uid://dra6mivmam3tq"]
+[gd_scene load_steps=12 format=3 uid="uid://dra6mivmam3tq"]
 
 [ext_resource type="Script" uid="uid://j66ei3msbdxq" path="res://scripts/moral_choices.gd" id="1_21gav"]
 [ext_resource type="Texture2D" uid="uid://bcbp2vtyrh6lc" path="res://assets/moralInterface.png" id="2_61c6a"]
@@ -10,6 +10,7 @@
 [ext_resource type="Texture2D" uid="uid://brmgkhx3b25k0" path="res://assets/purpleBut.png" id="7_djdny"]
 [ext_resource type="Texture2D" uid="uid://cnpen5gfjbnse" path="res://assets/purpleButClicked.png" id="8_sucbw"]
 [ext_resource type="Texture2D" uid="uid://c6hrt00luj6a2" path="res://assets/New Piskel-36.png.png" id="10_dl41x"]
+[ext_resource type="Texture2D" uid="uid://4sckaebp66vd" path="res://assets/New Piskel-37.png.png" id="11_tae1i"]
 
 [node name="moralChoices2" type="Node2D"]
 script = ExtResource("1_21gav")
@@ -103,13 +104,18 @@ offset_left = 144.0
 offset_top = 16.0
 offset_right = 916.0
 offset_bottom = 168.0
-max_value = 6000.0
-value = 1000.0
+max_value = 4500.0
+value = 4500.0
 rounded = true
 nine_patch_stretch = true
 stretch_margin_left = 9
 stretch_margin_right = 3
 texture_progress = ExtResource("10_dl41x")
+
+[node name="clock" type="Sprite2D" parent="."]
+position = Vector2(120.00001, 72)
+scale = Vector2(1.7500001, 1.75)
+texture = ExtResource("11_tae1i")
 
 [connection signal="button_up" from="Button" to="." method="_on_button_button_up"]
 [connection signal="button_up" from="Button2" to="." method="_on_button_2_button_up"]

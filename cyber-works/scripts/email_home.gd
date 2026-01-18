@@ -1,6 +1,6 @@
 extends Node2D
 
-@onready var button: Button = $Button
+@onready var button: Button = $Control/Button
 @onready var texture_rect: TextureRect = $TextureRect
 @onready var timer: Timer = $TextureRect/Timer
 
