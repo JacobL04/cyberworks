@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=3 uid="uid://7mt55kks62u0"]
+[gd_scene load_steps=10 format=3 uid="uid://7mt55kks62u0"]
 
 [ext_resource type="Script" uid="uid://ct68jngwjj1sj" path="res://scripts/unlock.gd" id="1_cdkie"]
 [ext_resource type="Texture2D" uid="uid://b76e2i1dsepm7" path="res://assets/blackScreen.png" id="2_6xo1x"]
@@ -6,8 +6,9 @@
 [ext_resource type="FontFile" uid="uid://cl8ntpdrpicmf" path="res://assets/Born2bSportyV2.ttf" id="4_4n3vj"]
 [ext_resource type="Script" uid="uid://djgehewy5wuna" path="res://scripts/password_1.gd" id="5_o1mj6"]
 [ext_resource type="Script" uid="uid://ylyi48x68rt0" path="res://scripts/land.gd" id="6_uqf5h"]
-[ext_resource type="Script" uid="uid://trkgnwuvtvih" path="res://scripts/password_2.gd" id="6_wyndt"]
-[ext_resource type="Script" uid="uid://c88taquvnsvdd" path="res://scripts/password_3.gd" id="7_m1e48"]
+[ext_resource type="Script" path="res://scripts/password_2.gd" id="6_wyndt"]
+[ext_resource type="Script" path="res://scripts/password_3.gd" id="7_m1e48"]
+[ext_resource type="PackedScene" uid="uid://cycb23gs1sdtm" path="res://scenes/text_box.tscn" id="9_wyndt"]
 
 [node name="Unlock" type="Node2D"]
 script = ExtResource("1_cdkie")
@@ -69,5 +70,7 @@ theme_override_font_sizes/font_size = 50
 text = "[Drag & drop a STRONG password]"
 script = ExtResource("6_uqf5h")
 metadata/_edit_use_anchors_ = true
+
+[node name="TextBox" parent="." instance=ExtResource("9_wyndt")]
 
 [connection signal="button_up" from="Computer/Button" to="." method="_on_button_button_up"]
