@@ -24,12 +24,21 @@ var current_target_file_path = ""
 @onready var text_edit: LineEdit = $LineEdit
 @onready var files_container = $FilesContainer
 @onready var save_dialog = $SaveDialog
+@onready var textbox := $TextBox
 
 func _ready():
+	start_cutscene()
 	setup_save_dialog()
 	create_desktop_icons()
 	text_edit.text_submitted.connect(_on_text_edit_text_submitted)
 
+func start_cutscene() -> void:
+	var dialogue := [
+		{ "speaker": "discord", "text": "'It appears these are stolen sensitive data'" },
+		{ "speaker": "discord", "text": "'Maybe we can find your SIN. here.'" },
+	]
+
+	textbox.start_dialogue(dialogue)
 
 func setup_save_dialog():
 	save_dialog.file_selected.connect(_on_save_dialog_file_selected)
