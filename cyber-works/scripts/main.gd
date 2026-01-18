@@ -37,3 +37,6 @@ func toMainInterface():
 
 func toStart():
 	get_tree().change_scene_to_file.call_deferred("res://scenes/start.tscn")
+
+func toComputer():
+	get_tree().change_scene_to_file.call_deferred("res://scenes/computer.tscn")

@@ -1,8 +1,9 @@
-[gd_scene load_steps=9 format=3 uid="uid://cjpdnmirjnk46"]
+[gd_scene load_steps=10 format=3 uid="uid://cjpdnmirjnk46"]
 
 [ext_resource type="Script" uid="uid://2xg1a71cq0we" path="res://scripts/email_home.gd" id="1_75i7d"]
 [ext_resource type="Texture2D" uid="uid://j87rciq1og2w" path="res://assets/emailHome.png" id="2_rpym3"]
 [ext_resource type="FontFile" uid="uid://cl8ntpdrpicmf" path="res://assets/Born2bSportyV2.ttf" id="3_auotb"]
+[ext_resource type="Texture2D" uid="uid://c72ivt7hw8s1x" path="res://assets/jumpscare.png" id="4_rpym3"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_bcxpb"]
 
@@ -22,7 +23,14 @@ position = Vector2(544, 540)
 scale = Vector2(16.999998, 16.875)
 texture = ExtResource("2_rpym3")
 
-[node name="Button" type="Button" parent="."]
+[node name="Control" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Button" type="Button" parent="Control"]
+layout_mode = 0
 offset_left = 360.0
 offset_top = 656.0
 offset_right = 816.0
@@ -39,7 +47,55 @@ theme_override_styles/pressed = SubResource("StyleBoxEmpty_xow6d")
 theme_override_styles/hover = SubResource("StyleBoxEmpty_mb6rn")
 theme_override_styles/disabled = SubResource("StyleBoxEmpty_movc8")
 theme_override_styles/focus = SubResource("StyleBoxEmpty_l6qyv")
-text = "this is the website u want"
+text = "IT Security Coordination"
 alignment = 0
 
-[connection signal="button_up" from="Button" to="." method="_on_button_button_up"]
+[node name="MarginContainer" type="MarginContainer" parent="Control"]
+layout_mode = 0
+offset_left = 360.00003
+offset_top = 456.0
+offset_right = 633.2107
+offset_bottom = 500.0
+scale = Vector2(1.6104784, 1.791247)
+
+[node name="rickRoll" type="LinkButton" parent="Control/MarginContainer"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_auotb")
+theme_override_font_sizes/font_size = 43
+text = "Secret"
+uri = "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+
+[node name="veryCool" type="Button" parent="Control"]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 0.2
+offset_left = 360.0
+offset_top = 560.0
+offset_right = 808.0
+offset_bottom = 640.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_pressed_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_auotb")
+theme_override_font_sizes/font_size = 32
+text = "Very cool"
+flat = true
+alignment = 0
+
+[node name="TextureRect" type="TextureRect" parent="."]
+visible = false
+offset_right = 1088.0
+offset_bottom = 1088.0
+texture = ExtResource("4_rpym3")
+
+[node name="Timer" type="Timer" parent="TextureRect"]
+
+[connection signal="button_up" from="Control/Button" to="." method="_on_button_button_up"]
+[connection signal="button_up" from="Control/veryCool" to="." method="_on_very_cool_button_up"]
+[connection signal="timeout" from="TextureRect/Timer" to="." method="_on_timer_timeout"]
