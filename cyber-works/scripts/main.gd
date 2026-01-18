@@ -1,6 +1,6 @@
 extends Node2D
 
-var moral = 0
+var moral = -6
 
 #gamestate
 var moralChoices = false
