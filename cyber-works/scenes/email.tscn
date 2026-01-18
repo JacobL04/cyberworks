@@ -44,6 +44,6 @@ offset_bottom = 421.0
 theme_override_colors/font_color = Color(1, 1, 1, 1)
 theme_override_fonts/font = ExtResource("1_dwfkx")
 theme_override_font_sizes/font_size = 48
-placeholder_text = "Enter URL here"
+placeholder_text = "Enter web URL here"
 
 [connection signal="text_submitted" from="TextEdit" to="." method="_on_text_edit_text_submitted"]
