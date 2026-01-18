@@ -1,6 +1,6 @@
 extends Node2D
 
-@export var correctAns: String = "www.opsecworks.com"
+@export var correctAns: String = "opsecworks.local"
 @export var correctAns2: String = "opsecworks.com"
 @onready var text_edit: LineEdit = $TextEdit
 

@@ -28,7 +28,19 @@ func _on_button_pressed():
 	checkAns(username.text)
 	
 func checkAns(input_text: String):
-	if input_text == correctUsername:
+	# Clean the input: lowercase it and remove extra spaces
+	var clean_input = input_text.to_lower().strip_edges()
+	
+	# Check for common SQL Injection patterns
+	var is_tautology = clean_input.contains("1=1") or clean_input.contains("1==1") or clean_input.contains("'a'='a'")
+	var has_comment = clean_input.contains("--") or clean_input.contains("#")
+	var has_or = clean_input.contains(" or ")
+	
+	# Logic: If they use 'OR' combined with a truth statement OR a comment, they win
+	if (has_or and is_tautology) or (has_or and has_comment):
+		unlockSuccess()
+	# Fallback for the exact string just in case
+	elif clean_input == correctUsername.to_lower():
 		unlockSuccess()
 	else:
 		unlockFail()

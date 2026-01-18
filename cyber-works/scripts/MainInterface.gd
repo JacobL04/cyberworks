@@ -36,6 +36,7 @@ func start_cutscene() -> void:
 	var dialogue := [
 		{ "speaker": "discord", "text": "'It appears these are stolen sensitive data'" },
 		{ "speaker": "discord", "text": "'Maybe we can find your SIN. here.'" },
+		{ "speaker": "discord", "text": "'Tools like Wireshark may be useful'" }
 	]
 
 	textbox.start_dialogue(dialogue)
