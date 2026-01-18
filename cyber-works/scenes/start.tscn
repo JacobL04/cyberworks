@@ -12,20 +12,25 @@
 script = ExtResource("1_u80x2")
 
 [node name="Label" type="Label" parent="."]
-offset_left = 260.0
-offset_top = 100.0
-offset_right = 820.0
-offset_bottom = 380.0
+offset_left = -66.0
+offset_top = 148.0
+offset_right = 1159.0
+offset_bottom = 428.0
 pivot_offset = Vector2(280, 140)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = -9
+theme_override_constants/shadow_offset_y = 18
+theme_override_constants/shadow_outline_size = 25
 theme_override_fonts/font = ExtResource("2_bodal")
-theme_override_font_sizes/font_size = 280
-text = "TITLE"
+theme_override_font_sizes/font_size = 190
+text = "Cyberchaos"
+horizontal_alignment = 1
 
 [node name="StartBut" type="TextureButton" parent="."]
 offset_left = 412.0
-offset_top = 422.0
-offset_right = 668.0
-offset_bottom = 542.0
+offset_top = 600.0
+offset_right = 667.99994
+offset_bottom = 720.00006
 texture_normal = ExtResource("3_bodal")
 texture_pressed = ExtResource("4_kdmts")
 ignore_texture_size = true
