@@ -6,8 +6,8 @@
 [ext_resource type="FontFile" uid="uid://cl8ntpdrpicmf" path="res://assets/Born2bSportyV2.ttf" id="4_4n3vj"]
 [ext_resource type="Script" uid="uid://djgehewy5wuna" path="res://scripts/password_1.gd" id="5_o1mj6"]
 [ext_resource type="Script" uid="uid://ylyi48x68rt0" path="res://scripts/land.gd" id="6_uqf5h"]
-[ext_resource type="Script" path="res://scripts/password_2.gd" id="6_wyndt"]
-[ext_resource type="Script" path="res://scripts/password_3.gd" id="7_m1e48"]
+[ext_resource type="Script" uid="uid://trkgnwuvtvih" path="res://scripts/password_2.gd" id="6_wyndt"]
+[ext_resource type="Script" uid="uid://c88taquvnsvdd" path="res://scripts/password_3.gd" id="7_m1e48"]
 [ext_resource type="PackedScene" uid="uid://cycb23gs1sdtm" path="res://scenes/text_box.tscn" id="9_wyndt"]
 
 [node name="Unlock" type="Node2D"]
@@ -34,7 +34,7 @@ offset_bottom = 840.0
 mouse_filter = 0
 theme_override_fonts/font = ExtResource("4_4n3vj")
 theme_override_font_sizes/font_size = 48
-text = "aushdad"
+text = "Q3#o23D+"
 script = ExtResource("5_o1mj6")
 
 [node name="password2" type="Label" parent="."]
