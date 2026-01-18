@@ -10,7 +10,7 @@ func _on_text_edit_text_submitted(new_text: String) -> void:
 	checkAns(new_text)
 
 func checkAns(input_text: String):
-	if input_text == correctAns or correctAns2:
+	if input_text == correctAns or input_text == correctAns2:
 		unlockSuccess()
 	else:
 		unlockFail()
