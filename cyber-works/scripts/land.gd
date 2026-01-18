@@ -11,6 +11,7 @@ func _drop_data(_at_position, data):
 	text = data["text"]
 	if text == "P1@s5w0rD":
 		Main.toMoralChoice()
+
 	else:
 		print("wrong")
 		text = "Weak password"
