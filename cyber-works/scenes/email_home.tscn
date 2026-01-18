@@ -1,9 +1,10 @@
-[gd_scene load_steps=10 format=3 uid="uid://cjpdnmirjnk46"]
+[gd_scene load_steps=11 format=3 uid="uid://cjpdnmirjnk46"]
 
 [ext_resource type="Script" uid="uid://2xg1a71cq0we" path="res://scripts/email_home.gd" id="1_75i7d"]
 [ext_resource type="Texture2D" uid="uid://j87rciq1og2w" path="res://assets/emailHome.png" id="2_rpym3"]
 [ext_resource type="FontFile" uid="uid://cl8ntpdrpicmf" path="res://assets/Born2bSportyV2.ttf" id="3_auotb"]
 [ext_resource type="Texture2D" uid="uid://c72ivt7hw8s1x" path="res://assets/jumpscare.png" id="4_rpym3"]
+[ext_resource type="PackedScene" uid="uid://cycb23gs1sdtm" path="res://scenes/text_box.tscn" id="5_auotb"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_bcxpb"]
 
@@ -95,6 +96,8 @@ offset_bottom = 1088.0
 texture = ExtResource("4_rpym3")
 
 [node name="Timer" type="Timer" parent="TextureRect"]
+
+[node name="TextBox" parent="." instance=ExtResource("5_auotb")]
 
 [connection signal="button_up" from="Control/Button" to="." method="_on_button_button_up"]
 [connection signal="button_up" from="Control/veryCool" to="." method="_on_very_cool_button_up"]

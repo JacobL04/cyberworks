@@ -1,9 +1,10 @@
-[gd_scene load_steps=6 format=3 uid="uid://cycb23gs1sdtm"]
+[gd_scene load_steps=7 format=3 uid="uid://cycb23gs1sdtm"]
 
 [ext_resource type="Script" uid="uid://dfo0jlslh0cjc" path="res://scripts/textBox.gd" id="1_dyarx"]
 [ext_resource type="FontFile" uid="uid://cl8ntpdrpicmf" path="res://assets/Born2bSportyV2.ttf" id="2_qdwih"]
 [ext_resource type="Texture2D" uid="uid://cm1y5qn41rcvt" path="res://assets/Frame.png" id="3_3ojeh"]
-[ext_resource type="Texture2D" uid="uid://dtq0gxk0x0kt6" path="res://assets/discord.png" id="4_nq18v"]
+[ext_resource type="Texture2D" uid="uid://dfpipx4ofrtd0" path="res://assets/DiscordHead.png" id="4_3ojeh"]
+[ext_resource type="Texture2D" uid="uid://gj14kv5qvo4q" path="res://assets/RileyHead.png" id="4_nq18v"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_d0rgj"]
 bg_color = Color(0.13068005, 0.41376668, 0.2764331, 1)
@@ -57,10 +58,16 @@ visible_characters = 0
 visible_ratio = 0.0
 
 [node name="frame" type="Sprite2D" parent="."]
-position = Vector2(942.99994, 825.00006)
-scale = Vector2(2.671875, 2.578125)
+position = Vector2(935.99994, 840.00006)
+scale = Vector2(2.3515625, 2.2690516)
 texture = ExtResource("3_3ojeh")
 
-[node name="discord" type="Sprite2D" parent="frame"]
-position = Vector2(14.783625, 11.054545)
+[node name="RileyHead" type="Sprite2D" parent="frame"]
+position = Vector2(2.0503998e-05, -2.8133392e-05)
+scale = Vector2(1.6183089, 1.5946827)
 texture = ExtResource("4_nq18v")
+
+[node name="DiscordHead" type="Sprite2D" parent="frame"]
+position = Vector2(2.2649765e-05, -1.4424324e-05)
+scale = Vector2(1.7062327, 1.6785598)
+texture = ExtResource("4_3ojeh")
