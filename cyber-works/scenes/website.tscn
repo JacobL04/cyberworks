@@ -59,3 +59,22 @@ theme_override_font_sizes/font_size = 25
 text = "Warning: Deprecated mysql_query() detected"
 
 [node name="TextBox" parent="." instance=ExtResource("4_1bxcg")]
+visible = false
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+offset_left = 212.00005
+offset_top = 813.0
+offset_right = 485.21075
+offset_bottom = 857.0
+scale = Vector2(1.6104784, 1.791247)
+
+[node name="rickRoll" type="LinkButton" parent="MarginContainer"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_xqv5d")
+theme_override_font_sizes/font_size = 20
+text = "mySQL Docs"
+uri = "https://tcm-sec.com/avoid-or-1-equals-1-in-sql-injections/"

@@ -2,10 +2,21 @@ extends Node2D
 
 @export var correctUsername: String = "or 1==1--"
 @onready var username: LineEdit = $username
+@onready var textbox := $TextBox
+
+
+func start_cutscene() -> void:
+	var dialogue := [
+		{ "speaker": "discord", "text": "'Oh no! We need an administrator account to login.'" },
+		{ "speaker": "discord", "text": "'I wonder if we could bypase it..'" },
+	]
+
+	textbox.start_dialogue(dialogue)
 
 var animation_tween: Tween
 
 func _ready() -> void:
+	start_cutscene()
 	username.text_submitted.connect(_on_text_edit_text_submitted)
 	$Button.pressed.connect(_on_button_pressed)
 

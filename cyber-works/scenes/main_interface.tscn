@@ -1,8 +1,9 @@
-[gd_scene load_steps=5 format=3 uid="uid://dj80cnt1a4tu"]
+[gd_scene load_steps=6 format=3 uid="uid://dj80cnt1a4tu"]
 
 [ext_resource type="Script" uid="uid://che8njejfljs0" path="res://scripts/MainInterface.gd" id="1_51bk3"]
 [ext_resource type="Texture2D" uid="uid://hmknbyh2oxh1" path="res://assets/site.png" id="2_efbr5"]
 [ext_resource type="FontFile" uid="uid://cl8ntpdrpicmf" path="res://assets/Born2bSportyV2.ttf" id="3_efbr5"]
+[ext_resource type="PackedScene" uid="uid://cycb23gs1sdtm" path="res://scenes/text_box.tscn" id="4_rgrph"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_51bk3"]
 font_size = 26
@@ -66,3 +67,5 @@ offset_bottom = 879.0
 theme_override_fonts/font = ExtResource("3_efbr5")
 theme_override_font_sizes/font_size = 40
 placeholder_text = "Enter SIN number here"
+
+[node name="TextBox" parent="." instance=ExtResource("4_rgrph")]
