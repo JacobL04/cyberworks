@@ -11,7 +11,7 @@ func _process(_delta: float) -> void:
 	progress_bar.value -= 1
 	if progress_bar.value == 0:
 		Main.moral += randi_range(-2, 2)
-		Main.toComputer()
+		Main.toMainInterface()
 
 func _on_button_button_up() -> void:
 	Main.moral += 2
