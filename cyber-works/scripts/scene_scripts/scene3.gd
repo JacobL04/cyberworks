@@ -28,3 +28,4 @@ func start_cutscene() -> void:
 func _on_dialogue_finished() -> void:
 	print("Dialogue finished!")
 	get_tree().change_scene_to_file("res://scenes/unlock.tscn")
+	

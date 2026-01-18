@@ -1,10 +1,18 @@
-[gd_scene load_steps=6 format=3 uid="uid://cojflt1iyajkp"]
+[gd_scene load_steps=9 format=3 uid="uid://cojflt1iyajkp"]
 
 [ext_resource type="Script" uid="uid://dp1n7nkskx4g2" path="res://scripts/scene_scripts/scene4.gd" id="1_nfw4y"]
 [ext_resource type="FontFile" uid="uid://cl8ntpdrpicmf" path="res://assets/Born2bSportyV2.ttf" id="2_j6vxe"]
 [ext_resource type="Texture2D" uid="uid://dynidctfqr415" path="res://assets/exitBut.png" id="5_8moi8"]
+[ext_resource type="FontFile" uid="uid://bqwlpcb84kf46" path="res://assets/font/Peaberry-Font-v2.0/Peaberry Font Family/Peaberry Base/PeaberryBase.ttf" id="6_7oq0r"]
 [ext_resource type="Texture2D" uid="uid://okmfy0uyd3bg" path="res://assets/exitButClicked.png" id="6_uc18a"]
 [ext_resource type="Texture2D" uid="uid://c880o7vl0446e" path="res://assets/sky.png" id="7_14lli"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_j6vxe"]
+line_spacing = 1.0
+font = ExtResource("6_7oq0r")
+
+[sub_resource type="LabelSettings" id="LabelSettings_2oeyh"]
+font_size = 18
 
 [node name="Scene4" type="Node2D"]
 script = ExtResource("1_nfw4y")
@@ -40,16 +48,17 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = 254.0
-offset_top = 418.0
-offset_right = 373.0
-offset_bottom = 441.0
+offset_left = 311.0
+offset_top = 509.99997
+offset_right = 472.0
+offset_bottom = 526.0
 grow_horizontal = 2
 grow_vertical = 2
-scale = Vector2(5, 5)
+scale = Vector2(1.7, 1.7)
 size_flags_horizontal = 4
 theme_override_fonts/font = ExtResource("2_j6vxe")
 text = "your moral status:"
+label_settings = SubResource("LabelSettings_j6vxe")
 horizontal_alignment = 1
 
 [node name="MoralLabel" type="Label" parent="."]
@@ -58,16 +67,17 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = 375.0
-offset_top = 533.0
-offset_right = 494.0
-offset_bottom = 556.0
+offset_left = 351.0
+offset_top = 380.0
+offset_right = 470.0
+offset_bottom = 403.0
 grow_horizontal = 2
 grow_vertical = 2
 scale = Vector2(3, 3)
 size_flags_horizontal = 4
 theme_override_fonts/font = ExtResource("2_j6vxe")
 text = "MORAL_SCORE"
+label_settings = SubResource("LabelSettings_2oeyh")
 horizontal_alignment = 1
 
 [connection signal="pressed" from="QuitBut" to="." method="_on_quit_but_pressed"]
