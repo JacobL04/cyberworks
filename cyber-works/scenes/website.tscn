@@ -15,28 +15,29 @@ texture = ExtResource("1_5er5m")
 
 [node name="username" type="LineEdit" parent="."]
 offset_left = 424.0
-offset_top = 575.0
-offset_right = 752.0
-offset_bottom = 623.0
+offset_top = 568.0
+offset_right = 768.0
+offset_bottom = 632.0
 theme_override_fonts/font = ExtResource("2_xqv5d")
 theme_override_font_sizes/font_size = 32
 placeholder_text = "Username"
 
 [node name="password" type="LineEdit" parent="."]
 offset_left = 424.0
-offset_top = 710.0
-offset_right = 752.0
-offset_bottom = 758.0
+offset_top = 696.0
+offset_right = 768.0
+offset_bottom = 776.0
 theme_override_fonts/font = ExtResource("2_xqv5d")
 theme_override_font_sizes/font_size = 32
 placeholder_text = "Password"
 
 [node name="Button" type="Button" parent="."]
-offset_left = 704.0
-offset_top = 816.0
-offset_right = 816.0
-offset_bottom = 855.0
+offset_left = 696.0
+offset_top = 808.0
+offset_right = 832.0
+offset_bottom = 872.0
 text = "ENTER"
+flat = true
 
 [node name="Label" type="Label" parent="."]
 offset_left = 205.0
