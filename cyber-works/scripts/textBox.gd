@@ -7,6 +7,7 @@ const READ_RATE := 0.05
 @onready var textbox_container: MarginContainer = $TextboxContainer
 @onready var arrow: Label = $TextboxContainer/Panel/Arrow
 @onready var label: Label = $TextboxContainer/Panel/Label
+@onready var discord: Sprite2D = $frame/discord
 
 enum State {
 	READY,
@@ -21,6 +22,7 @@ var tween: Tween
 
 func _ready() -> void:
 	hide_textbox()
+	discord.hide()
 
 
 func _process(_delta: float) -> void:
