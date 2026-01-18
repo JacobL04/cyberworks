@@ -40,3 +40,6 @@ func toStart():
 
 func toComputer():
 	get_tree().change_scene_to_file.call_deferred("res://scenes/computer.tscn")
+	
+func toEnd():
+	get_tree().change_scene_to_file.call_deferred("res://scenes/intro_cutscenes/scene4.tscn")

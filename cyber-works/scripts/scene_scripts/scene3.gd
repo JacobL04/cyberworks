@@ -13,7 +13,11 @@ func start_cutscene() -> void:
 		"...",
 		"Strange..",
 		"No access.",
-		"You get dressed and head to the office...",
+		"Something feels wrong.",
+		"Your identity has been stolen.",
+		"Someone is using your SIN.",
+		"You must recover it by solving cybersecruity challenges..",
+		"And make ethical decisions.",
 	]
 
 	textbox.start_dialogue(dialogue)
@@ -22,4 +26,4 @@ func start_cutscene() -> void:
 
 func _on_dialogue_finished() -> void:
 	print("Dialogue finished!")
-	get_tree().change_scene_to_file("res://scenes/intro_cutscenes/scene4.tscn")
+	get_tree().change_scene_to_file("res://scenes/unlock.tscn")
