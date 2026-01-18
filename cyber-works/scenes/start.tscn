@@ -36,12 +36,6 @@ texture_pressed = ExtResource("4_kdmts")
 ignore_texture_size = true
 stretch_mode = 0
 
-[node name="SettingsBut" type="TextureButton" parent="."]
-offset_left = 412.0
-offset_top = 622.0
-offset_right = 668.0
-offset_bottom = 742.0
-
 [node name="QuitBut" type="TextureButton" parent="."]
 offset_left = 444.0
 offset_top = 822.0
@@ -58,6 +52,5 @@ texture = ExtResource("7_4ge6i")
 
 [connection signal="button_up" from="StartBut" to="." method="_on_start_but_button_up"]
 [connection signal="pressed" from="StartBut" to="." method="_on_start_but_pressed"]
-[connection signal="button_up" from="SettingsBut" to="." method="_on_settings_but_button_up"]
 [connection signal="button_up" from="QuitBut" to="." method="_on_quit_but_button_up"]
 [connection signal="pressed" from="QuitBut" to="." method="_on_quit_but_pressed"]
