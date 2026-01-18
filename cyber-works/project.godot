@@ -25,6 +25,10 @@ window/size/viewport_width=1080
 window/size/viewport_height=1080
 mouse_cursor/custom_image="uid://cqy5x2fayoiw8"
 
+[editor]
+
+movie_writer/movie_file="/home/artos/dev/cyberworks/cyber-works/movie.avi"
+
 [input]
 
 m1={

@@ -8,8 +8,8 @@ func _ready() -> void:
 
 
 func start_cutscene() -> void:
-	var dialogue: Array[String] = [
-		"You check your computer for more information.",
+	var dialogue := [
+		{ "speaker": "none", "text": "You check your computer for more information."},
 	]
 
 	textbox.start_dialogue(dialogue)

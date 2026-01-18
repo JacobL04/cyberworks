@@ -9,7 +9,7 @@ func _can_drop_data(_at_position, data):
 func _drop_data(_at_position, data):
 	# Update this label's text to match the dragged text
 	text = data["text"]
-	if text == "P1@s5w0rD":
+	if text == "Q3#o23D+":
 		Main.toMoralChoice()
 
 	else:
