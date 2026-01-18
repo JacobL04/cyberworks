@@ -13,5 +13,5 @@ func _drop_data(_at_position, data):
 		Main.toMoralChoice()
 	else:
 		print("wrong")
-		text = "Wrong password"
+		text = "Weak password"
 		show()
